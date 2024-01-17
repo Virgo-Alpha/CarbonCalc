@@ -73,11 +73,11 @@ def main():
         st.subheader("You will Kill:")
         # line
         st.markdown("---")
-        st.write(f"{killings['leopard']} Leopards")
-        st.write(f"{killings['lion']} Lions")
-        st.write(f"{killings['buffalo']} Buffalos")
-        st.write(f"{killings['rhino']} Rhinos")
-        st.write(f"{killings['elephant']} Elephants")
+        st.write(f"{killings['leopard']} Leopard(s)")
+        st.write(f"{killings['lion']} Lion(s)")
+        st.write(f"{killings['buffalo']} Buffalo(s)")
+        st.write(f"{killings['rhino']} Rhino(s)")
+        st.write(f"{killings['elephant']} Elephant(s)")
 
         st.sidebar.success("Calculations completed!")
 
