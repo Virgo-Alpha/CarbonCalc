@@ -47,8 +47,13 @@ def main():
 
     st.title("Carbon Footprint Calculator")
 
+    st.markdown("### Calculate the amount of carbon you emit when traveling by plane and the number of big 5 animals you kill in the process")
+
+    st.markdown("&#8592; Input your departure and destination city and click calculate to get started")
+
     # Sidebar for user input
-    st.sidebar.header("User Input")
+    st.sidebar.markdown("# Input Trip Details")
+
     dep_city = st.sidebar.selectbox("Departure City", [city['city'] for city in city_data])
     des_city = st.sidebar.selectbox("Destination City", [city['city'] for city in city_data])
 
@@ -73,6 +78,8 @@ def main():
         st.write(f"{killings['buffalo']} Buffalos")
         st.write(f"{killings['rhino']} Rhinos")
         st.write(f"{killings['elephant']} Elephants")
+
+        st.sidebar.success("Calculations completed!")
 
 if __name__ == "__main__":
     main()
